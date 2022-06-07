@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    font-family: 'Integral', sans-serif;
+    font-size: 1.4rem;
+}
+
+.logo {
+    color: var(--colorBlack);
+}
+
+.navList {
+    display: flex;
+
+    .navItem {
+        margin: 0 1rem;
+    }
+
+    .navLink {
+        color: var(--colorBlack)
+    }
+}
