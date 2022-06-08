@@ -2,14 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem;
-    font-family: 'Integral', sans-serif;
+    padding: 2rem;
     font-size: 1.4rem;
+    background-color: var(--colorGreen);
 }
 
 .logo {
     color: var(--colorBlack);
     font-size: 2rem;
+    font-family: 'Integral', sans-serif;
 }
 
 .navList {
@@ -21,9 +22,10 @@
 
     .navLink {
         color: var(--colorBlack);
+        text-transform: uppercase;
     }
 
     .navLinkActive {
-        color: #808080;
+        text-decoration: underline;
     }
 }
