@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 2rem;
     font-family: 'Integral', sans-serif;
@@ -8,6 +9,7 @@
 
 .logo {
     color: var(--colorBlack);
+    font-size: 2rem;
 }
 
 .navList {
@@ -18,6 +20,10 @@
     }
 
     .navLink {
-        color: var(--colorBlack)
+        color: var(--colorBlack);
+    }
+
+    .navLinkActive {
+        color: #808080;
     }
 }
