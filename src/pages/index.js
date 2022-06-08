@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as styles from './index.module.scss'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
           <button className={styles.button}>Visit our experience</button>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

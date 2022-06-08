@@ -1,0 +1,40 @@
+.footer {
+    padding: 4rem 2rem;
+    background-color: var(--colorDarkGreen);
+    color: var(--colorWhite);
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: 55% 1fr 1fr 1fr;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Integral', sans-serif;
+}
+
+.subtitle {
+    margin-top: 1rem;
+}
+
+.itemWrapper {
+    line-height: 200%;
+}
+
+.itemTitle {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.hr {
+    margin-top: 4rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Integral', sans-serif;
+    font-size: 2rem;
+}
