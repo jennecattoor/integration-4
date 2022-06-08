@@ -1,3 +1,30 @@
+.introWrapper {
+    background-color: var(--colorGreen);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
-    font-size: 3rem
+    font-size: 8rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    line-height: 130%;
+    color: var(--colorWhite);
+    text-shadow: -5px 5px #003726, -10px 10px var(--colorPurple);
+    margin: 5rem 0;
+}
+
+.button {
+    margin: 1rem 2rem;
+    background-color: var(--colorPurple);
+    padding: 1.5rem 4rem;
+    border: 2px solid var(--colorBlack);
+    box-shadow: var(--colorBlack) -5px 5px;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
