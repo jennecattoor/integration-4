@@ -1,9 +1,5 @@
 import * as React from "react";
 import * as styles from "./arduino.module.scss";
-<<<<<<< HEAD
-=======
-import Header from "../components/header";
->>>>>>> 5703f3bee852214e8cf07a5b34290b7fc79b74e3
 
 const Arduino = () => {
   //   const urlAPI = "https://www.youtube.com/iframe_api";
@@ -33,9 +29,6 @@ const Arduino = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      <p className={styles.title}>Experience page</p>
-=======
       {/* <YouTube videoId="ckShHgV9GRY"></YouTube> */}
       <iframe
         width="560"
@@ -46,7 +39,6 @@ const Arduino = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
->>>>>>> 5703f3bee852214e8cf07a5b34290b7fc79b74e3
     </>
   );
 };
