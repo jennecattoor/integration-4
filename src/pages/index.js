@@ -6,7 +6,13 @@ const IndexPage = () => {
   return (
     <>
       <Header />
-      <p className={styles.title}>Home page</p>
+      <section className={styles.introWrapper}>
+        <h1 className={styles.title}>What the f*ck is <br />Spiking!?</h1>
+        <div>
+          <button className={styles.button}>Do the quiz</button>
+          <button className={styles.button}>Visit our experience</button>
+        </div>
+      </section>
     </>
   )
 }
