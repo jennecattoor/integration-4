@@ -8,7 +8,7 @@
 }
 
 .title {
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: 900;
     font-style: italic;
     text-align: center;
@@ -19,9 +19,9 @@
 }
 
 .button {
-    margin: 1rem 2rem;
+    margin: 1.5rem 2rem;
     background-color: var(--colorPurple);
-    padding: 1.5rem 4rem;
+    padding: 1rem 3rem;
     border: 2px solid var(--colorBlack);
     box-shadow: var(--colorBlack) -5px 5px;
     color: var(--colorWhite);
@@ -31,5 +31,23 @@
 
     &:hover {
         box-shadow: var(--colorBlack) -3px 3px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .title {
+        font-size: 5.5rem;
+    }
+
+    .button {
+        padding: 1.5rem 4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .title {
+        font-size: 7.8rem;
     }
 }

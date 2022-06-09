@@ -2,10 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    font-size: 1.4rem;
     background-color: var(--colorGreen);
-    background-image: url(../../static/images/square.svg);
+    padding: 1.5rem .8rem;
 }
 
 .logo {
@@ -15,19 +13,32 @@
 }
 
 .navList {
-    display: flex;
+    display: none;
+}
 
-    .navItem {
-        margin: 0 1rem;
+@media only screen and (min-width: 1024px) {
+
+    .header {
+        padding: 2rem;
+        font-size: 1.4rem;
+        background-image: url(../../static/images/square.svg);
     }
 
-    .navLink {
-        color: var(--colorBlack);
-        text-transform: uppercase;
-        font-weight: 600;
-    }
+    .navList {
+        display: flex;
 
-    .navLinkActive {
-        text-decoration: underline;
+        .navItem {
+            margin: 0 1rem;
+        }
+
+        .navLink {
+            color: var(--colorBlack);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .navLinkActive {
+            text-decoration: underline;
+        }
     }
 }
