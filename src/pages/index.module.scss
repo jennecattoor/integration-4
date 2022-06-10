@@ -78,15 +78,21 @@
     }
 }
 
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .button {
-    margin: 1.5rem 2rem;
+    margin: 1rem;
     background-color: var(--colorPurple);
-    padding: 1rem 3rem;
+    padding: .8rem 2rem;
     border: 2px solid var(--colorBlack);
     box-shadow: var(--colorBlack) -5px 5px;
     color: var(--colorWhite);
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 
     &:hover {
@@ -98,6 +104,10 @@
 
     .title {
         font-size: 5.5rem;
+    }
+
+    .buttonWrapper {
+        display: inline;
     }
 
     .button {
@@ -112,6 +122,9 @@
     }
 
     .basicsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .basics {
             max-width: 65rem;
@@ -128,6 +141,4 @@
                 "squares squares types types";
         }
     }
-
-
 }
