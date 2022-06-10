@@ -19,38 +19,33 @@
 }
 
 .basicsWrapper {
-    padding: 8rem 2rem;
+    padding: 6rem .8rem;
     background-color: var(--colorWhite);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     .basics {
-        max-width: 65rem;
         border: 2px solid var(--colorBlack);
-        box-shadow: var(--colorBlack) -5px 5px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6rem 1fr 6rem 1fr;
         grid-template-areas:
-            "verb verb verb verb"
-            "problem problem arrow arrow"
-            "problem problem arrow arrow"
-            "squares squares types types"
-            "squares squares types types";
+            "verb"
+            "arrow"
+            "problem"
+            "squares"
+            "types";
     }
 
     .verb {
         grid-area: verb;
         background-color: var(--colorGreen);
         color: var(--colorWhite);
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
 
     .problem {
         grid-area: problem;
         background-color: var(--colorWhite);
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
 
     .arrow {
@@ -62,7 +57,7 @@
         grid-area: types;
         background-color: var(--colorPurple);
         color: var(--colorWhite);
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
 
     .squares {
@@ -76,6 +71,10 @@
         font-weight: 700;
         margin-bottom: .8rem;
         font-family: 'Integral', sans-serif;
+
+        span {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -111,4 +110,24 @@
     .title {
         font-size: 7.8rem;
     }
+
+    .basicsWrapper {
+
+        .basics {
+            max-width: 65rem;
+            border: 2px solid var(--colorBlack);
+            box-shadow: var(--colorBlack) -5px 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+            grid-template-areas:
+                "verb verb verb verb"
+                "problem problem arrow arrow"
+                "problem problem arrow arrow"
+                "squares squares types types"
+                "squares squares types types";
+        }
+    }
+
+
 }
