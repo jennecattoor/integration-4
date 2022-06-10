@@ -19,7 +19,64 @@
 }
 
 .basicsWrapper {
+    padding: 8rem 2rem;
     background-color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .basics {
+        max-width: 65rem;
+        border: 2px solid var(--colorBlack);
+        box-shadow: var(--colorBlack) -5px 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+        grid-template-areas:
+            "verb verb verb verb"
+            "problem problem arrow arrow"
+            "problem problem arrow arrow"
+            "squares squares types types"
+            "squares squares types types";
+    }
+
+    .verb {
+        grid-area: verb;
+        background-color: var(--colorGreen);
+        color: var(--colorWhite);
+        padding: 2rem;
+    }
+
+    .problem {
+        grid-area: problem;
+        background-color: var(--colorWhite);
+        padding: 2rem;
+    }
+
+    .arrow {
+        grid-area: arrow;
+        background-image: url(../../static/images/arrows.jpg);
+    }
+
+    .types {
+        grid-area: types;
+        background-color: var(--colorPurple);
+        color: var(--colorWhite);
+        padding: 2rem;
+    }
+
+    .squares {
+        grid-area: squares;
+        background-color: var(--colorYellow);
+        background-image: url(../../static/images/squares.png);
+    }
+
+    .basicsTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: .8rem;
+        font-family: 'Integral', sans-serif;
+    }
 }
 
 .button {

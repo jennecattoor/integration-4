@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from 'gatsby'
 import * as styles from './header.module.scss'
+import { Link } from 'gatsby'
 
-export default function Header() {
+const Header = () => {
 
   return (
     <header className={styles.header}>
@@ -17,3 +17,5 @@ export default function Header() {
       </nav>
     </header>)
 }
+
+export default Header
