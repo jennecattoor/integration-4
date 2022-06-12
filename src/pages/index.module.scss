@@ -47,7 +47,7 @@
 }
 
 .basicsWrapper {
-    padding: 6rem .8rem;
+    padding: 6rem var(--marginMobile);
     background-color: var(--colorWhite);
 
     .basics {
@@ -67,13 +67,13 @@
         grid-area: verb;
         background-color: var(--colorGreen);
         color: var(--colorWhite);
-        padding: 2rem .8rem;
+        padding: 2rem var(--marginMobile);
     }
 
     .problem {
         grid-area: problem;
         background-color: var(--colorWhite);
-        padding: 2rem .8rem;
+        padding: 2rem var(--marginMobile);
     }
 
     .arrow {
@@ -85,7 +85,7 @@
         grid-area: types;
         background-color: var(--colorPurple);
         color: var(--colorWhite);
-        padding: 2rem .8rem;
+        padding: 2rem var(--marginMobile);
     }
 
     .squares {
@@ -116,22 +116,19 @@
 
     .quoteText {
         max-width: 85rem;
-        font-size: 6rem;
+        margin: 0 var(--marginMobile);
+        font-size: var(--fontLarge);
         font-weight: 900;
         text-transform: uppercase;
-        line-height: 140%;
+        line-height: 160%;
         font-family: 'Integral', sans-serif;
 
         span {
             color: var(--colorWhite);
             background-color: var(--colorPurple);
-            padding: 0 1rem 1rem 1rem;
-            border-radius: 1rem;
+            padding: 0 .5rem .5rem .5rem;
+            border-radius: .5rem;
         }
-    }
-
-    .hr {
-        color: var(--colorBlack);
     }
 }
 
@@ -189,6 +186,18 @@
 
             .basicsTitle {
                 font-size: var(--fontLarge);
+            }
+        }
+    }
+
+    .quote {
+        .quoteText {
+            font-size: 3rem;
+            line-height: 140%;
+
+            span {
+                padding: 0 1rem 1rem 1rem;
+                border-radius: 1rem;
             }
         }
     }

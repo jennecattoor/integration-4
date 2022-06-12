@@ -40,7 +40,6 @@ const IndexPage = () => {
       </section>
       <section className={styles.quote}>
         <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe" - Jane</p>
-        <hr className={styles.hr} />
       </section>
       <Footer />
     </>
