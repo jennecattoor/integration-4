@@ -11,10 +11,11 @@ const IndexPage = () => {
       <section className={styles.introWrapper}>
         <h1 className={styles.title}>What the f*ck is <br />Spiking!?</h1>
         <div className={styles.buttonWrapper}>
-          <button className={styles.button}>Do the quiz</button>
+          <button className={styles.button}>See all tips</button>
           <button className={styles.button}>Visit our experience</button>
         </div>
         <StaticImage className={styles.pillsHeaderRight} src="../../static/images/pills-right.svg" alt="Image of yellow pills" />
+        <StaticImage className={styles.pillsHeaderLeft} src="../../static/images/pills-left.svg" alt="Image of yellow pills" />
       </section>
       <section className={styles.basicsWrapper}>
         <div className={styles.basics}>
@@ -37,6 +38,7 @@ const IndexPage = () => {
           </div>
           <div className={styles.squares}></div>
         </div>
+        <StaticImage className={styles.pillsBasicsRight} src="../../static/images/pills-basic-right.svg" alt="Image of pills & capsules" />
       </section>
       <section className={styles.quote}>
         <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe" - Jane</p>

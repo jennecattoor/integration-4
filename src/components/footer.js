@@ -1,5 +1,6 @@
 import React from "react"
 import * as styles from './footer.module.scss'
+import { Link } from 'gatsby'
 
 
 const Footer = () => {
@@ -13,10 +14,10 @@ const Footer = () => {
         <div className={styles.itemWrapper}>
           <h3 className={styles.itemTitle}>Menu</h3>
           <ul>
-            <li>Home</li>
-            <li>Quiz</li>
-            <li>Stories</li>
-            <li>Experience</li>
+            <li><Link to='/' className={styles.link}>Home</Link></li>
+            <li><Link to='/tips' className={styles.link}>Tips</Link></li>
+            <li><Link to='/stories' className={styles.link}>Stories</Link></li>
+            <li><Link to='/experience' className={styles.link}>Experience</Link></li>
           </ul>
         </div>
         <div className={styles.itemWrapper}>
