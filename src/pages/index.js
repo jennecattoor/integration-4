@@ -2,6 +2,7 @@ import * as React from "react"
 import * as styles from './index.module.scss'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
@@ -13,12 +14,12 @@ const IndexPage = () => {
           <button className={styles.button}>Do the quiz</button>
           <button className={styles.button}>Visit our experience</button>
         </div>
+        <StaticImage className={styles.pillsHeaderRight} src="../../static/images/pills-right.svg" alt="Image of yellow pills" />
       </section>
       <section className={styles.basicsWrapper}>
         <div className={styles.basics}>
           <div className={styles.verb}>
             <h2 className={styles.basicsTitle}>&#x27AB; Spiking <span>/spaikiŋ/ · verb · male</span> </h2>
-            <p></p>
             <p>'Spiking' is when someone puts alcohol or drugs into another person's drink or their body without their knowledge and/or consent.</p>
           </div>
           <div className={styles.problem}>
@@ -36,6 +37,10 @@ const IndexPage = () => {
           </div>
           <div className={styles.squares}></div>
         </div>
+      </section>
+      <section className={styles.quote}>
+        <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe" - Jane</p>
+        <hr className={styles.hr} />
       </section>
       <Footer />
     </>

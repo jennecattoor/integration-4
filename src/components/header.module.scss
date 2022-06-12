@@ -26,19 +26,27 @@
 
     .navList {
         display: flex;
+        align-items: centers;
 
         .navItem {
             margin: 0 1rem;
-        }
 
-        .navLink {
-            color: var(--colorBlack);
-            text-transform: uppercase;
-            font-weight: 600;
-        }
+            &:last-child {
+                padding: .5rem;
+                border: 1px solid var(--colorBlack);
+                box-shadow: var(--colorBlack) -3px 3px;
+                background-color: var(--colorPurple);
+            }
 
-        .navLinkActive {
-            text-decoration: underline;
+            .navLink {
+                color: var(--colorBlack);
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            .navLinkActive {
+                text-decoration: underline;
+            }
         }
     }
 }
