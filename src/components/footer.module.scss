@@ -5,7 +5,7 @@
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: var(--fontLarge);
     font-family: 'Integral', sans-serif;
 }
 
@@ -20,7 +20,7 @@
 .itemTitle {
     margin-top: 2rem;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: var(--fontNormal);
     text-transform: uppercase;
 }
 
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Integral', sans-serif;
-    font-size: 1rem;
+    font-size: var(--fontNormal);
 }
 
 @media only screen and (min-width: 768px) {}
@@ -40,7 +40,7 @@
 @media only screen and (min-width: 1024px) {
 
     .title {
-        font-size: 2rem;
+        font-size: var(--fontLarge);
         font-family: 'Integral', sans-serif;
     }
 
@@ -65,7 +65,7 @@
 
     .itemTitle {
         margin-top: 0;
-        font-size: 1.2rem;
+        font-size: var(--fontMedium);
     }
 
     .hr {
@@ -73,6 +73,6 @@
     }
 
     .copyright {
-        font-size: 2rem;
+        font-size: var(--fontLarge);
     }
 }

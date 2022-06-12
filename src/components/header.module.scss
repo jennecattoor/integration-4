@@ -8,7 +8,7 @@
 
 .logo {
     color: var(--colorBlack);
-    font-size: 2rem;
+    font-size: var(--fontLarge);
     font-family: 'Integral', sans-serif;
 }
 
@@ -20,13 +20,13 @@
 
     .header {
         padding: 2rem;
-        font-size: 1.4rem;
+        font-size: var(--fontLarge);
         background-image: url(../../static/images/square.svg);
     }
 
     .navList {
         display: flex;
-        align-items: centers;
+        align-items: center;
 
         .navItem {
             margin: 0 1rem;

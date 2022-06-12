@@ -32,7 +32,7 @@
     box-shadow: var(--colorBlack) -5px 5px;
     color: var(--colorWhite);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: var(--fontMedium);
     font-weight: 600;
 
     &:hover {
@@ -95,13 +95,13 @@
     }
 
     .basicsTitle {
-        font-size: 1.8rem;
+        font-size: var(--fontLarge);
         font-weight: 700;
         margin-bottom: .8rem;
         font-family: 'Integral', sans-serif;
 
         span {
-            font-size: 1.2rem;
+            font-size: var(--fontMedium);
         }
     }
 }
@@ -188,7 +188,7 @@
             }
 
             .basicsTitle {
-                font-size: 2rem;
+                font-size: var(--fontLarge);
             }
         }
     }
