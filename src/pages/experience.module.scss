@@ -1,3 +1,27 @@
-.title {
-    font-size: var(--fontMedium)
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+
+.headerBox1 {
+    background-color: var(--colorWhite);
+    padding: 6rem;
+
+    .headerBox1Title {
+        font-size: 5rem;
+        -webkit-text-stroke: 2px var(--colorBlack);
+        color: var(--colorWhite);
+        font-style: italic;
+        font-family: 'Integral', sans-serif;
+    }
+
+    .headerBox1Image {
+        border: 1px solid var(--colorBlack);
+        box-shadow: var(--colorBlack) -5px 5px;
+    }
+}
+
+.headerBox2 {
+    background-color: var(--colorYellow);
 }

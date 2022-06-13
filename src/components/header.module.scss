@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--colorGreen);
+    position: absolute;
+    width: 99vw;
     padding: 1.5rem .8rem;
 }
 
@@ -21,7 +22,6 @@
     .header {
         padding: 2rem;
         font-size: 1.5rem;
-        background-image: url(../../static/images/square.svg);
     }
 
     .navList {
@@ -42,6 +42,10 @@
                 color: var(--colorBlack);
                 text-transform: uppercase;
                 font-weight: 600;
+
+                span {
+                    color: var(--colorWhite);
+                }
             }
 
             .navLinkActive {

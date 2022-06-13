@@ -1,6 +1,6 @@
 .introWrapper {
     background-color: var(--colorGreen);
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     line-height: 130%;
     color: var(--colorWhite);
     text-shadow: -5px 5px #003726, -10px 10px var(--colorPurple);
-    margin: 5rem 0;
+    margin: 13rem 0 5rem 0;
 }
 
 .buttonWrapper {
@@ -55,9 +55,20 @@
 .basicsWrapper {
     padding: 8rem var(--marginMobile);
     background-color: var(--colorWhite);
+    display: flex;
+    flex-direction: column;
+
+    .basicsIntro {
+        font-size: 6rem;
+        -webkit-text-stroke: 2px var(--colorBlack);
+        color: var(--colorWhite);
+        font-style: italic;
+        font-family: 'Integral', sans-serif;
+        margin-bottom: 5rem;
+    }
 
     .basics {
-        border: 2px solid var(--colorBlack);
+        font-size: var(--fontMedium);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5.5rem 1fr 5.5rem 2fr;
@@ -74,17 +85,20 @@
         background-color: var(--colorGreen);
         color: var(--colorWhite);
         padding: 2rem var(--marginMobile);
+        border: 2px solid var(--colorBlack);
     }
 
     .problem {
         grid-area: problem;
         background-color: var(--colorWhite);
         padding: 2rem var(--marginMobile);
+        border: 2px solid var(--colorBlack);
     }
 
     .arrow {
         grid-area: arrow;
         background-image: url(../../static/images/arrows.jpg);
+        border: 2px solid var(--colorBlack);
     }
 
     .types {
@@ -92,12 +106,14 @@
         background-color: var(--colorPurple);
         color: var(--colorWhite);
         padding: 2rem var(--marginMobile);
+        border: 2px solid var(--colorBlack);
     }
 
     .squares {
         grid-area: squares;
         background-color: var(--colorYellow);
         background-image: url(../../static/images/squares.png);
+        border: 2px solid var(--colorBlack);
     }
 
     .basicsTitle {
@@ -111,10 +127,49 @@
         }
     }
 
+    .basicsList {
+        list-style-type: circle;
+    }
+
+    .basicsListItem {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        &:first-child {
+            span {
+                font-weight: 700;
+                color: var(--colorYellow);
+                text-decoration: underline;
+            }
+        }
+
+        &:nth-child(2) {
+            span {
+                font-weight: 700;
+                color: var(--colorGreen);
+                text-decoration: underline;
+            }
+        }
+
+        &:last-child {
+            span {
+                font-weight: 700;
+                color: var(--colorBlack);
+                text-decoration: underline;
+            }
+        }
+    }
+
     .pillsBasicsRight {
         position: absolute;
         right: 0;
-        top: 130vh;
+        top: 150vh;
+    }
+
+    .pillBasicsLeft {
+        position: absolute;
+        left: 29vh;
+        top: 235vh;
     }
 }
 
@@ -181,7 +236,7 @@
             grid-template-areas:
                 "verb verb verb verb"
                 "problem problem arrow arrow"
-                "problem problem arrow arrow"
+                "problem problem types types"
                 "squares squares types types"
                 "squares squares types types";
 
@@ -205,7 +260,7 @@
 
     .quote {
         .quoteText {
-            font-size: 3rem;
+            font-size: 6.2rem;
             line-height: 140%;
 
             span {
