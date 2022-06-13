@@ -49,7 +49,14 @@
             }
 
             .navLinkActive {
-                text-decoration: underline;
+                color: var(--colorPurple);
+            }
+
+            .navLinkActiveSpecial {
+
+                span {
+                    color: var(--colorGreen);
+                }
             }
         }
     }

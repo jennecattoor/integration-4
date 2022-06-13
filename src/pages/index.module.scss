@@ -30,7 +30,6 @@
     padding: .8rem 2rem;
     border: 2px solid var(--colorBlack);
     box-shadow: var(--colorBlack) -5px 5px;
-    color: var(--colorWhite);
     text-transform: uppercase;
     font-size: var(--fontMedium);
     font-weight: 600;
@@ -38,18 +37,18 @@
     &:hover {
         box-shadow: var(--colorBlack) -3px 3px;
     }
+
+    .buttonLink {
+        color: var(--colorWhite);
+    }
 }
 
 .pillsHeaderRight {
-    position: absolute;
-    right: 15vh;
-    top: 18vh;
+    display: none;
 }
 
 .pillsHeaderLeft {
-    position: absolute;
-    left: 20vh;
-    top: 60vh;
+    display: none;
 }
 
 .basicsWrapper {
@@ -59,7 +58,7 @@
     flex-direction: column;
 
     .basicsIntro {
-        font-size: 6rem;
+        font-size: 4rem;
         -webkit-text-stroke: 2px var(--colorBlack);
         color: var(--colorWhite);
         font-style: italic;
@@ -161,19 +160,16 @@
     }
 
     .pillsBasicsRight {
-        position: absolute;
-        right: 0;
-        top: 150vh;
+        display: none;
     }
 
     .pillBasicsLeft {
-        position: absolute;
-        left: 29vh;
-        top: 235vh;
+        display: none;
     }
 }
 
 .tips {
+    padding: 0 var(--marginMobile);
     height: 65vh;
     background-image: url(../../static/images/square-green.svg);
     display: flex;
@@ -185,12 +181,16 @@
         font-size: 4rem;
         font-weight: 900;
         text-transform: uppercase;
-        margin-bottom: 4rem;
         font-style: italic;
 
         span {
             color: var(--colorGreen);
         }
+    }
+
+    .tipsButton {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -230,8 +230,8 @@
     align-items: center;
     font-size: var(--fontMedium);
 
-    .tipsTitle {
-        font-size: 3rem;
+    .experienceTitle {
+        font-size: 4rem;
         margin: 8rem 0 4rem 0;
         -webkit-text-stroke: 2px var(--colorBlack);
         color: var(--colorWhite);
@@ -268,13 +268,16 @@
     padding: 1.2rem 2.5rem;
     border: 2px solid var(--colorBlack);
     box-shadow: var(--colorBlack) -5px 5px;
-    color: var(--colorWhite);
     text-transform: uppercase;
     font-size: var(--fontMedium);
     font-weight: 600;
 
     &:hover {
         box-shadow: var(--colorBlack) -3px 3px;
+    }
+
+    .buttonLink {
+        color: var(--colorWhite);
     }
 }
 
@@ -299,10 +302,28 @@
         font-size: 7.8rem;
     }
 
+    .pillsHeaderRight {
+        display: inline;
+        position: absolute;
+        right: 15vh;
+        top: 18vh;
+    }
+
+    .pillsHeaderLeft {
+        display: inline;
+        position: absolute;
+        left: 20vh;
+        top: 60vh;
+    }
+
     .basicsWrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .basicsIntro {
+            font-size: 6rem;
+        }
 
         .basics {
             max-width: 65rem;
@@ -333,6 +354,20 @@
             .basicsTitle {
                 font-size: var(--fontLarge);
             }
+        }
+
+        .pillsBasicsRight {
+            display: inline;
+            position: absolute;
+            right: 0;
+            top: 150vh;
+        }
+
+        .pillBasicsLeft {
+            display: inline;
+            position: absolute;
+            left: 29vh;
+            top: 235vh;
         }
     }
 

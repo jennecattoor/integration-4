@@ -21,11 +21,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.itemWrapper}>
-          <h3 className={styles.itemTitle}>Follow us</h3>
+          <h3 className={styles.itemTitle}>Contact</h3>
           <ul>
-            <li>Instagram</li>
-            <li>TikTok</li>
-            <li>Newsletter</li>
+            <li>Druglijn</li>
+            <li>Politie</li>
+            <li>Druginfo</li>
           </ul>
         </div>
         <div className={styles.itemWrapper}>

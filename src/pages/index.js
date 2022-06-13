@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 
+
 const IndexPage = () => {
   return (
     <>
@@ -12,8 +13,8 @@ const IndexPage = () => {
       <section className={styles.introWrapper}>
         <h1 className={styles.title}>What the f*ck is <br />Spiking!?</h1>
         <div className={styles.buttonWrapper}>
-          <button className={styles.button}><Link to='/tips'>See all tips</Link></button>
-          <button className={styles.button}><Link to='/experience'>Visit our experience</Link></button>
+          <button className={styles.button}><Link className={styles.buttonLink} to='/tips'>See all tips</Link></button>
+          <button className={styles.button}><Link className={styles.buttonLink} to='/experience'>Visit our experience</Link></button>
         </div>
         <StaticImage className={styles.pillsHeaderRight} src="../../static/images/pills-right.svg" alt="yellow pills" />
         <StaticImage className={styles.pillsHeaderLeft} src="../../static/images/pills-left.svg" alt="yellow pills" />
@@ -45,13 +46,15 @@ const IndexPage = () => {
       </section>
       <section className={styles.tips}>
         <h3 className={styles.tipsTitle}>Prepare yourself and read our <span>Tips</span></h3>
-        <button className={styles.button}>Read the tips</button>
+        <div className={styles.tipsButton}>
+          <button className={styles.buttonLarge}><Link className={styles.buttonLink} to='/tips'>Read the tips</Link></button>
+        </div>
       </section>
       <section className={styles.quote}>
         <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe" - Jane</p>
       </section>
       <section className={styles.experience}>
-        <h3 className={styles.tipsTitle}>The vr experience</h3>
+        <h3 className={styles.experienceTitle}>The vr experience</h3>
         <div className={styles.infoWrapper}>
           <div className={styles.experienceInfo}>
             <p>
@@ -65,7 +68,7 @@ const IndexPage = () => {
             <StaticImage className={styles.pillBasicsLeft} src="../../static/images/map.png" alt="map of Rotterdam" />
           </div>
         </div>
-        <button className={styles.buttonLarge}><Link to='/experience'>Visit our experience</Link></button>
+        <button className={styles.buttonLarge}><Link className={styles.buttonLink} to='/experience'>Visit our experience</Link></button>
       </section>
       <Footer />
     </>
