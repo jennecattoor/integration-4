@@ -173,6 +173,26 @@
     }
 }
 
+.tips {
+    height: 65vh;
+    background-image: url(../../static/images/square-green.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tipsTitle {
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        font-style: italic;
+
+        span {
+            color: var(--colorGreen);
+        }
+    }
+}
 
 .quote {
     height: 80vh;
@@ -183,7 +203,7 @@
     align-items: center;
 
     .quoteText {
-        max-width: 85rem;
+        max-width: var(--maxWidth);
         margin: 0 var(--marginMobile);
         font-size: var(--fontLarge);
         font-weight: 900;
@@ -197,6 +217,64 @@
             padding: 0 .5rem .5rem .5rem;
             border-radius: .5rem;
         }
+    }
+}
+
+.experience {
+    padding: 0 var(--marginMobile);
+    background-color: var(--colorWhite);
+    background-image: url(../../static/images/square-green.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontMedium);
+
+    .tipsTitle {
+        font-size: 3rem;
+        margin: 8rem 0 4rem 0;
+        -webkit-text-stroke: 2px var(--colorBlack);
+        color: var(--colorWhite);
+        font-style: italic;
+        font-family: 'Integral', sans-serif;
+    }
+
+    .infoWrapper {
+        display: grid;
+        grid-template-rows: 5fr 0 3fr;
+        max-width: var(--maxWidth);
+    }
+
+    .experienceInfo {
+        padding: 2rem;
+        background-color: var(--colorYellow);
+        border: 2px solid var(--colorBlack);
+
+        .experienceLocation {
+            font-size: var(--fontLarge);
+            font-weight: 700;
+            margin-top: 2rem;
+        }
+    }
+
+    .experienceMap {
+        border: 2px solid var(--colorBlack);
+    }
+}
+
+.buttonLarge {
+    margin: 5rem var(--marginMobile);
+    background-color: var(--colorGreen);
+    padding: 1.2rem 2.5rem;
+    border: 2px solid var(--colorBlack);
+    box-shadow: var(--colorBlack) -5px 5px;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    font-size: var(--fontMedium);
+    font-weight: 600;
+
+    &:hover {
+        box-shadow: var(--colorBlack) -3px 3px;
     }
 }
 
@@ -267,6 +345,41 @@
                 padding: 0 1rem 1rem 1rem;
                 border-radius: 1rem;
             }
+        }
+    }
+
+    .experience {
+
+        .tipsTitle {
+            font-size: 5rem;
+        }
+
+        .infoWrapper {
+            display: grid;
+            grid-template-columns: 3fr 1fr 4fr;
+            grid-template-rows: 1fr;
+        }
+
+        .experienceSquares {
+            background-color: var(--colorYellow);
+            background-image: url(../../static/images/squares.png);
+            border: 2px solid var(--colorBlack);
+        }
+    }
+
+    .buttonLarge {
+        margin: 5rem var(--marginMobile);
+        background-color: var(--colorGreen);
+        padding: 2rem 4rem;
+        border: 2px solid var(--colorBlack);
+        box-shadow: var(--colorBlack) -5px 5px;
+        color: var(--colorWhite);
+        text-transform: uppercase;
+        font-size: var(--fontLarge);
+        font-weight: 600;
+
+        &:hover {
+            box-shadow: var(--colorBlack) -3px 3px;
         }
     }
 }
