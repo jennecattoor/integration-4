@@ -1,27 +1,132 @@
-.header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 80vh;
-}
+.about {
+    padding: 5rem var(--marginMobile);
+    background-color: var(--colorBrokenWhite);
 
-.headerBox1 {
-    background-color: var(--colorWhite);
-    padding: 6rem;
-
-    .headerBox1Title {
-        font-size: 5rem;
-        -webkit-text-stroke: 2px var(--colorBlack);
-        color: var(--colorWhite);
-        font-style: italic;
-        font-family: 'Integral', sans-serif;
+    hr {
+        border: 1px solid var(--colorBlack);
     }
 
-    .headerBox1Image {
-        border: 1px solid var(--colorBlack);
+    .aboutTitle {
+        margin: 2rem 0;
+        font-weight: 900;
+        font-size: var(--fontLarge);
+        text-transform: uppercase;
+    }
+
+    .aboutText {
+        margin-top: 1rem;
+
+        span {
+            color: var(--colorPurple);
+        }
+    }
+
+    .aboutImage {
+        margin: 2rem 0;
+        border: 2px solid var(--colorBlack);
         box-shadow: var(--colorBlack) -5px 5px;
     }
 }
 
-.headerBox2 {
-    background-color: var(--colorYellow);
+.map {
+    padding: 5rem var(--marginMobile);
+    background-color: var(--colorGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mapImage {
+        border: 2px solid var(--colorBlack);
+    }
+}
+
+.locations {
+    padding: 1rem var(--marginMobile);
+    background-color: var(--colorGreen);
+
+
+    .locationsTitle {
+        padding: 2rem 0;
+        font-weight: 900;
+        font-size: var(--fontLarge);
+        text-transform: uppercase;
+    }
+
+    .location {
+        margin: 1rem 0;
+        padding: var(--marginMobile);
+        font-weight: 600;
+        border: 2px solid var(--colorBlack);
+
+        .date {
+            font-size: var(--fontMedium);
+        }
+
+        .name {
+            font-size: var(--fontLarge)
+        }
+
+
+        &:nth-child(1) {
+            background-color: var(--colorBrokenWhite);
+        }
+
+        &:nth-child(2) {
+            background-color: var(--colorPurple);
+        }
+
+        &:nth-child(3) {
+            background-color: var(--colorBrokenWhite);
+        }
+
+        &:nth-child(4) {
+            background-color: var(--colorYellow);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+    .about {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 42%;
+        grid-auto-flow: dense;
+
+
+        .aboutTextWrapper {
+            grid-column-start: 2;
+            padding: 9rem 2rem;
+
+            .aboutTitle {
+                font-size: 3rem;
+            }
+
+            .aboutText {
+                font-size: var(--fontMedium);
+            }
+        }
+
+        .aboutImageWrapper {
+            padding: 9rem 2rem;
+            background-color: var(--colorGreen);
+            background-image: url(../../static/images/square.svg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .aboutImage {
+                margin: 0;
+            }
+        }
+    }
+
+    .map {
+
+        .mapImage {
+            max-width: 50rem;
+            box-shadow: var(--colorBlack) -5px 5px;
+        }
+    }
 }
