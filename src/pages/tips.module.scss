@@ -1,3 +1,215 @@
-.title {
-    font-size: var(--fontMedium);
+.tipsWrapper {
+    padding: 5rem 0;
+    background-color: var(--colorWhite);
+    background-image: url(../../static/images/square-green.svg);
+}
+
+.tipsHeader {
+    padding: 1rem var(--marginMobile);
+    background-image: url(../../static/images/party-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h3 {
+        font-size: var(--fontMedium);
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+
+    .headerIntro {
+        padding: var(--marginMobile);
+        margin-bottom: 1rem;
+        background-color: var(--colorBrokenWhite);
+        border: 2px solid var(--colorBlack)
+    }
+
+    .headerAvoid {
+        padding: var(--marginMobile);
+        background-color: var(--colorGreen);
+        border: 2px solid var(--colorBlack);
+
+        .headerList {
+            line-height: 140%;
+        }
+    }
+}
+
+.stepsTitle {
+    margin: 2rem 0;
+    font-weight: 900;
+    font-size: var(--fontLarge);
+    text-transform: uppercase;
+
+    span {
+        color: var(--colorYellow);
+    }
+}
+
+.tipsSteps {
+    padding: 1rem var(--marginMobile);
+
+    .stepWrapper {
+        margin: 2rem 0;
+        padding: var(--marginMobile);
+        border: 2px solid var(--colorBlack);
+
+        .stepTitle {
+            margin-bottom: .5rem;
+            font-weight: 900;
+            line-height: 120%;
+            font-size: var(--fontMedium);
+            text-transform: uppercase;
+        }
+
+        &:nth-child(2) {
+            background-color: var(--colorGreen);
+
+            span {
+                color: var(--colorWhite);
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: var(--colorBrokenWhite);
+
+            span {
+                color: var(--colorPurple);
+            }
+        }
+
+        &:nth-child(4) {
+            background-color: var(--colorGreen);
+
+            span {
+                color: var(--colorWhite);
+            }
+        }
+
+        &:nth-child(5) {
+            background-color: var(--colorYellow);
+
+            span {
+                color: var(--colorPurple);
+            }
+        }
+
+        &:nth-child(6) {
+            background-color: var(--colorBrokenWhite);
+
+            span {
+                color: var(--colorPurple);
+            }
+        }
+
+        &:nth-child(7) {
+            background-color: var(--colorGreen);
+
+            span {
+                color: var(--colorWhite);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tipsWrapper {
+        padding: 5rem 0;
+    }
+
+    .tipsHeader {
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: var(--fontLarge);
+            margin-bottom: .5rem;
+        }
+
+        .headerIntro {
+            padding: 2rem;
+            width: 45rem;
+        }
+
+        .headerAvoid {
+            padding: 2rem;
+            width: 45rem;
+
+            .headerList {
+                line-height: 140%;
+            }
+        }
+    }
+
+    .stepsTitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .tipsSteps {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stepWrapper {
+            padding: 2rem;
+            width: 45rem;
+
+            .stepTitle {
+                font-size: var(--fontLarge);
+            }
+
+            &:nth-child(3) {
+                box-shadow: var(--colorGreen) -5px -5px, var(--colorBlack) -7px -7px;
+            }
+
+            &:nth-child(4) {
+                box-shadow: var(--colorWhite) -5px -5px, var(--colorBlack) -7px -7px, var(--colorGreen) -11px -11px, var(--colorBlack) -13px -13px;
+            }
+
+            &:nth-child(5) {
+                box-shadow: var(--colorGreen) -5px -5px, var(--colorBlack) -7px -7px, var(--colorWhite) -11px -11px, var(--colorBlack) -13px -13px;
+            }
+
+            &:nth-child(6) {
+                box-shadow: var(--colorYellow) -5px -5px, var(--colorBlack) -7px -7px, var(--colorGreen) -11px -11px, var(--colorBlack) -13px -13px;
+            }
+
+            &:nth-child(7) {
+                box-shadow: var(--colorWhite) -5px -5px, var(--colorBlack) -7px -7px, var(--colorYellow) -11px -11px, var(--colorBlack) -13px -13px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .tipsWrapper {
+        padding: 7rem 0;
+    }
+
+    .tipsHeader {
+
+        .headerIntro {
+            width: 50rem;
+        }
+
+        .headerAvoid {
+            width: 50rem;
+        }
+    }
+
+    .stepsTitle {
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+
+    .tipsSteps {
+        .stepWrapper {
+            width: 50rem;
+        }
+    }
 }
