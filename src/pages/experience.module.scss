@@ -29,7 +29,7 @@
 }
 
 .map {
-    padding: 5rem var(--marginMobile);
+    padding: 3rem var(--marginMobile);
     background-color: var(--colorGreen);
     display: flex;
     align-items: center;
@@ -123,10 +123,113 @@
     }
 
     .map {
+        padding: 5rem 0;
 
         .mapImage {
             max-width: 50rem;
             box-shadow: var(--colorBlack) -5px 5px;
+        }
+    }
+
+    .locations {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .locationsTitle {
+            font-size: 4rem;
+            -webkit-text-stroke: 2px var(--colorBlack);
+            color: var(--colorGreen);
+            font-style: italic;
+            font-family: 'Integral', sans-serif;
+            margin-bottom: 2rem;
+        }
+
+        .location {
+            padding: 0;
+            margin: 2rem 0;
+            max-width: 65rem;
+            border: none;
+            text-transform: uppercase;
+            font-family: 'Integral', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 4fr 6fr 1fr;
+            grid-template-areas:
+                "number date name sticker";
+
+
+            .date {
+                grid-area: date;
+                padding: 1.4rem 1rem 1.6rem 1rem;
+                font-size: var(--fontLarge)
+            }
+
+            .name {
+                grid-area: name;
+                padding: 1.4rem 1rem 1.6rem 1rem;
+            }
+
+
+            &:nth-child(1) {
+                transform: rotate(-3deg);
+
+                .date {
+                    background-color: var(--colorBlack);
+                    color: var(--colorWhite);
+                }
+
+                .name {
+                    background-color: var(--colorPurple);
+                    color: var(--colorYellow);
+                }
+            }
+
+            &:nth-child(2) {
+                transform: rotate(1deg);
+                background-color: var(--colorBrokenWhite);
+
+                .date {
+                    background-color: var(--colorYellow);
+                    color: var(--colorDarkGreen);
+                }
+
+                .name {
+                    background-color: var(--colorBlack);
+                    color: var(--colorWhite);
+                }
+            }
+
+            &:nth-child(3) {
+                transform: rotate(3deg);
+                background-color: var(--colorBrokenWhite);
+
+                .date {
+                    background-color: var(--colorPurple);
+                    color: var(--colorYellow);
+                }
+
+                .name {
+                    background-color: var(--colorDarkGreen);
+                    color: var(--colorWhite);
+                }
+            }
+
+            &:nth-child(4) {
+                transform: rotate(-2deg);
+                background-color: var(--colorBrokenWhite);
+
+                .date {
+                    background-color: var(--colorDarkGreen);
+                    color: var(--colorWhite);
+                }
+
+                .name {
+                    background-color: var(--colorYellow);
+                    color: var(--colorDarkGreen);
+                }
+            }
         }
     }
 }
