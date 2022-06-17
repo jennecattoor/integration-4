@@ -2,12 +2,16 @@ import * as React from "react"
 import * as styles from './404.module.scss'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Wrong from '../../static/gifs/wrong.gif'
 
 const PageNotFound = () => {
   return (
     <>
       <Header />
-      <p className={styles.title}>Page not found</p>
+      <section className={styles.error}>
+        <h2 className={styles.title}>Wrong Way! Wrong way!</h2>
+        <img src={Wrong} alt="Person running the wrong way" />
+      </section>
       <Footer />
     </>
   )

@@ -1,3 +1,16 @@
+.error {
+    height: 70vh;
+    background-color: var(--colorBrokenWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
-    font-size: var(--fontMedium)
+    font-size: 3rem;
+    color: var(--colorBlack);
+    font-style: italic;
+    font-family: 'Integral', sans-serif;
+    margin-bottom: 5rem;
 }
