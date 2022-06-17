@@ -1,3 +1,111 @@
-.title {
-    font-size: var(--fontMedium)
+.rianne {
+    padding-top: 5rem;
+    background-color: var(--colorGreen);
+
+
+    .text {
+        span {
+            color: var(--colorWhite);
+        }
+    }
+}
+
+.jane {
+    background-color: var(--colorBrokenWhite);
+
+    .text {
+        span {
+            color: var(--colorPurple);
+        }
+    }
+}
+
+.noa {
+    background-color: var(--colorYellow);
+
+    .text {
+        span {
+            color: var(--colorPurple);
+        }
+    }
+}
+
+.text {
+    padding: 2rem var(--marginMobile);
+
+    .textBig {
+        margin: 1rem 0;
+        font-size: var(--fontLarge);
+        font-weight: 600;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+    .rianne {
+        padding-top: 7rem;
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-auto-flow: dense;
+
+        .text {
+            align-self: center;
+            justify-self: center;
+            grid-column-start: 2;
+        }
+
+        .image {
+            grid-column-start: 1;
+        }
+    }
+
+    .jane {
+        display: grid;
+        grid-template-columns: 1fr 30%;
+        grid-auto-flow: dense;
+
+        .text {
+            align-self: center;
+            justify-self: center;
+            grid-column-start: 1;
+        }
+
+        .image {
+            grid-column-start: 2;
+        }
+    }
+
+    .noa {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-auto-flow: dense;
+
+        .text {
+            align-self: center;
+            justify-self: center;
+            grid-column-start: 2;
+        }
+
+        .image {
+            grid-column-start: 1;
+        }
+    }
+
+    .text {
+        padding: var(--marginMobile);
+        font-size: 1.3rem;
+        max-width: 50rem;
+
+        .textBig {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-family: 'Integral', sans-serif;
+        }
+
+        .textSplit {
+            column-count: 2
+        }
+    }
 }
