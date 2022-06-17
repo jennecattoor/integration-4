@@ -1,75 +1,55 @@
-.introWrapper {
+.header {
+    padding: var(--marginMobile);
     background-color: var(--colorGreen);
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-image: url(../../static/images/square.svg);
-}
 
-.title {
-    font-size: 4rem;
-    font-weight: 900;
-    font-style: italic;
-    text-align: center;
-    line-height: 130%;
-    color: var(--colorWhite);
-    text-shadow: -5px 5px #003726, -10px 10px var(--colorPurple);
-    margin: 13rem 0 5rem 0;
-}
-
-.buttonWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button {
-    margin: 1rem;
-    background-color: var(--colorPurple);
-    padding: .8rem 2rem;
-    border: 2px solid var(--colorBlack);
-    box-shadow: var(--colorBlack) -5px 5px;
-    text-transform: uppercase;
-    font-size: var(--fontMedium);
-    font-weight: 600;
-
-    &:hover {
-        box-shadow: var(--colorBlack) -3px 3px;
-    }
-
-    .buttonLink {
-        color: var(--colorWhite);
-    }
-}
-
-.pillsHeaderRight {
-    display: none;
-}
-
-.pillsHeaderLeft {
-    display: none;
-}
-
-.basicsWrapper {
-    padding: 8rem var(--marginMobile);
-    background-color: var(--colorWhite);
-    display: flex;
-    flex-direction: column;
-
-    .basicsIntro {
+    .headerTitle {
         font-size: 4rem;
-        -webkit-text-stroke: 2px var(--colorBlack);
-        color: var(--colorWhite);
+        font-weight: 900;
         font-style: italic;
+        text-align: center;
+        line-height: 130%;
+        color: var(--colorWhite);
+        text-shadow: -5px 5px #003726, -10px 10px var(--colorPurple);
+    }
+
+    .headerButtons {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .headerLink {
+            margin: 1rem var(--marginMobile);
+
+            .headerButton {
+                padding: .8rem 2rem;
+                color: var(--colorWhite);
+                font-size: var(--fontMedium);
+                background-color: var(--colorPurple);
+            }
+        }
+    }
+}
+
+.basics {
+    padding: 5rem var(--marginMobile);
+    background-color: var(--colorBrokenWhite);
+
+    .basicsTitle {
+        font-size: 3rem;
         font-family: 'Integral', sans-serif;
         margin-bottom: 5rem;
     }
 
-    .basics {
+    .basicsGrid {
         font-size: var(--fontMedium);
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 5.5rem 1fr 5.5rem 2fr;
         grid-template-areas:
             "verb"
@@ -77,100 +57,88 @@
             "problem"
             "squares"
             "types";
-    }
 
-    .verb {
-        grid-area: verb;
-        background-color: var(--colorGreen);
-        color: var(--colorWhite);
-        padding: 2rem var(--marginMobile);
-        border: 2px solid var(--colorBlack);
-    }
-
-    .problem {
-        grid-area: problem;
-        background-color: var(--colorWhite);
-        padding: 2rem var(--marginMobile);
-        border: 2px solid var(--colorBlack);
-    }
-
-    .arrow {
-        grid-area: arrow;
-        background-image: url(../../static/images/arrows.jpg);
-        border: 2px solid var(--colorBlack);
-    }
-
-    .types {
-        grid-area: types;
-        background-color: var(--colorPurple);
-        color: var(--colorWhite);
-        padding: 2rem var(--marginMobile);
-        border: 2px solid var(--colorBlack);
-    }
-
-    .squares {
-        grid-area: squares;
-        background-color: var(--colorYellow);
-        background-image: url(../../static/images/squares.png);
-        border: 2px solid var(--colorBlack);
-    }
-
-    .basicsTitle {
-        font-size: var(--fontLarge);
-        font-weight: 700;
-        margin-bottom: .8rem;
-        font-family: 'Integral', sans-serif;
-
-        span {
-            font-size: var(--fontMedium);
+        .basicsVerb {
+            grid-area: verb;
+            padding: 2rem var(--marginMobile);
+            color: var(--colorWhite);
+            background-color: var(--colorGreen);
+            border: 2px solid var(--colorBlack);
         }
-    }
 
-    .basicsList {
-        list-style-type: circle;
-    }
+        .basicsProblem {
+            grid-area: problem;
+            padding: 2rem var(--marginMobile);
+            background-color: var(--colorWhite);
+            border: 2px solid var(--colorBlack);
+        }
 
-    .basicsListItem {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        .basicsArrow {
+            grid-area: arrow;
+            background-image: url(../../static/images/arrows.jpg);
+            border: 2px solid var(--colorBlack);
+        }
 
-        &:first-child {
+        .basicsTypes {
+            grid-area: types;
+            padding: 2rem var(--marginMobile);
+            color: var(--colorWhite);
+            background-color: var(--colorPurple);
+            border: 2px solid var(--colorBlack);
+        }
+
+        .basicsSquares {
+            grid-area: squares;
+            background-color: var(--colorYellow);
+            background-image: url(../../static/images/squares.png);
+            border: 2px solid var(--colorBlack);
+        }
+
+        .gridTitle {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: .8rem;
+            font-family: 'Integral', sans-serif;
+
             span {
-                font-weight: 700;
-                color: var(--colorYellow);
-                text-decoration: underline;
+                font-size: var(--fontMedium);
             }
         }
 
-        &:nth-child(2) {
+        .basicsLi {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
             span {
                 font-weight: 700;
-                color: var(--colorGreen);
                 text-decoration: underline;
             }
-        }
 
-        &:last-child {
-            span {
-                font-weight: 700;
-                color: var(--colorBlack);
-                text-decoration: underline;
+            &:first-child {
+                span {
+                    color: var(--colorYellow);
+                }
             }
+
+            &:nth-child(2) {
+                span {
+                    color: var(--colorGreen);
+                }
+            }
+
+            &:last-child {
+                span {
+                    color: var(--colorBlack);
+                }
+            }
+
         }
-    }
-
-    .pillsBasicsRight {
-        display: none;
-    }
-
-    .pillBasicsLeft {
-        display: none;
     }
 }
 
 .tips {
-    padding: 0 var(--marginMobile);
-    height: 65vh;
+    padding: 8rem var(--marginMobile);
+    background-color: var(--colorWhite);
     background-image: url(../../static/images/square-green.svg);
     display: flex;
     flex-direction: column;
@@ -178,8 +146,9 @@
     align-items: center;
 
     .tipsTitle {
-        font-size: 4rem;
+        font-size: 2.3rem;
         font-weight: 900;
+        text-align: center;
         text-transform: uppercase;
         font-style: italic;
 
@@ -188,14 +157,19 @@
         }
     }
 
-    .tipsButton {
-        display: flex;
-        justify-content: space-between;
+    .tipsLink {
+        margin: 1rem;
+
+        .tipsButton {
+            padding: 1.2rem 2.5rem;
+            color: var(--colorWhite);
+            font-size: var(--fontMedium);
+            background-color: var(--colorGreen);
+        }
     }
 }
 
 .quote {
-    height: 80vh;
     background-color: var(--colorYellow);
     display: flex;
     flex-direction: column;
@@ -203,12 +177,11 @@
     align-items: center;
 
     .quoteText {
-        max-width: var(--maxWidth);
-        margin: 0 var(--marginMobile);
-        font-size: var(--fontLarge);
+        margin: 8rem var(--marginMobile);
+        font-size: 2.3rem;
         font-weight: 900;
+        line-height: 140%;
         text-transform: uppercase;
-        line-height: 160%;
         font-family: 'Integral', sans-serif;
 
         span {
@@ -220,116 +193,131 @@
     }
 }
 
-.experience {
-    padding: 0 var(--marginMobile);
-    background-color: var(--colorWhite);
-    background-image: url(../../static/images/square-green.svg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.stories {
     font-size: var(--fontMedium);
 
-    .experienceTitle {
-        font-size: 4rem;
-        margin: 8rem 0 4rem 0;
-        -webkit-text-stroke: 2px var(--colorBlack);
-        color: var(--colorWhite);
-        font-style: italic;
-        font-family: 'Integral', sans-serif;
-    }
+    .storiesText {
+        padding: 4rem var(--marginMobile) 2rem var(--marginMobile);
 
-    .infoWrapper {
-        display: grid;
-        grid-template-rows: 5fr 0 3fr;
-        max-width: var(--maxWidth);
-    }
-
-    .experienceInfo {
-        padding: 2rem;
-        background-color: var(--colorYellow);
-        border: 2px solid var(--colorBlack);
-
-        .experienceLocation {
-            font-size: var(--fontLarge);
-            font-weight: 700;
-            margin-top: 2rem;
+        .storiesTitle {
+            font-size: 3rem;
+            font-family: 'Integral', sans-serif;
+            margin-bottom: .5rem;
         }
     }
 
-    .experienceMap {
-        border: 2px solid var(--colorBlack);
+    .storiesGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .story {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 900;
+
+            p {
+                padding: 2rem var(--marginMobile) 1rem var(--marginMobile);
+            }
+
+            &:nth-child(1) {
+                background-color: var(--colorGreen);
+            }
+
+            &:nth-child(2) {
+                background-color: var(--colorPurple);
+            }
+
+            &:nth-child(3) {
+                background-color: var(--colorYellow);
+            }
+        }
     }
 }
 
-.buttonLarge {
-    margin: 5rem var(--marginMobile);
-    background-color: var(--colorGreen);
-    padding: 1.2rem 2.5rem;
-    border: 2px solid var(--colorBlack);
-    box-shadow: var(--colorBlack) -5px 5px;
-    text-transform: uppercase;
+.experience {
+    padding: 5rem var(--marginMobile);
     font-size: var(--fontMedium);
-    font-weight: 600;
+    background-color: var(--colorBrokenWhite);
+    background-image: url(../../static/images/square-green.svg);
 
-    &:hover {
-        box-shadow: var(--colorBlack) -3px 3px;
+    .experienceTitle {
+        font-size: 3rem;
+        font-family: 'Integral', sans-serif;
+        margin-bottom: 3rem;
     }
 
-    .buttonLink {
-        color: var(--colorWhite);
+    .experienceWrapper {
+        display: grid;
+        grid-template-rows: 4.5fr 0 3fr;
+
+        .experienceInfo {
+            padding: 1rem;
+            background-color: var(--colorYellow);
+            border: 2px solid var(--colorBlack);
+
+            .experienceLocation {
+                font-size: var(--fontLarge);
+                font-weight: 700;
+                margin-top: 2rem;
+            }
+        }
+
+        .experienceMap {
+            border: 2px solid var(--colorBlack);
+        }
+    }
+
+    .experienceLink {
+        margin: 3rem 0;
+
+        .experienceButton {
+            padding: 1.2rem 2.5rem;
+            color: var(--colorWhite);
+            font-size: var(--fontMedium);
+            background-color: var(--colorGreen);
+        }
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {}
 
-    .title {
-        font-size: 5.5rem;
-    }
-
-    .buttonWrapper {
-        display: inline;
-    }
-
-    .button {
-        padding: 1.5rem 4rem;
-    }
-}
 
 @media only screen and (min-width: 1024px) {
 
-    .title {
-        font-size: 7.8rem;
-    }
-
-    .pillsHeaderRight {
-        display: inline;
-        position: absolute;
-        right: 15vh;
-        top: 18vh;
-    }
-
-    .pillsHeaderLeft {
-        display: inline;
-        position: absolute;
-        left: 20vh;
-        top: 60vh;
-    }
-
-    .basicsWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .basicsIntro {
-            font-size: 6rem;
+    .header {
+        .headerTitle {
+            font-size: 9rem;
         }
 
-        .basics {
+        .headerButtons {
+            margin: 3rem 0;
+            flex-direction: row;
+
+            .headerLink {
+                margin: 1rem 2rem;
+
+                .headerButton {
+                    padding: 2rem 4rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .basics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .basicsTitle {
+            margin-bottom: 5rem;
+            font-size: 5rem;
+            color: var(--colorBrokenWhite);
+            -webkit-text-stroke: 2px var(--colorBlack);
+        }
+
+        .basicsGrid {
             max-width: 65rem;
-            border: 2px solid var(--colorBlack);
-            box-shadow: var(--colorBlack) -5px 5px;
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
             grid-template-areas:
@@ -338,83 +326,107 @@
                 "problem problem types types"
                 "squares squares types types"
                 "squares squares types types";
+        }
+    }
 
-            .verb {
-                padding: 4rem 2rem;
-            }
+    .tips {
+        padding: 12rem var(--marginMobile);
 
-            .problem {
-                padding: 4rem 2rem;
-            }
+        .tipsTitle {
+            font-size: 3.5rem;
+        }
 
-            .types {
-                padding: 4rem 2rem;
-            }
+        .tipsLink {
+            margin: 2rem;
 
-            .basicsTitle {
+            .tipsButton {
+                padding: 2rem 4.5rem;
+                font-weight: 700;
                 font-size: var(--fontLarge);
             }
-        }
-
-        .pillsBasicsRight {
-            display: inline;
-            position: absolute;
-            right: 0;
-            top: 150vh;
-        }
-
-        .pillBasicsLeft {
-            display: inline;
-            position: absolute;
-            left: 29vh;
-            top: 235vh;
         }
     }
 
     .quote {
         .quoteText {
-            font-size: 6.2rem;
-            line-height: 140%;
+            margin: 12rem var(--marginMobile);
+            max-width: 70rem;
+            font-size: 5rem;
+        }
+    }
 
-            span {
-                padding: 0 1rem 1rem 1rem;
-                border-radius: 1rem;
+    .stories {
+        .storiesText {
+            margin: 4rem auto;
+            max-width: 70rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .storiesTitle {
+                margin: 0;
+                margin-bottom: 1rem;
+                font-size: 5rem;
+            }
+
+            p {
+                max-width: 30rem;
+            }
+        }
+
+        .storiesGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            .story {
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: 900;
+
+                p {
+                    padding: 2rem 2rem 0 2rem;
+                }
             }
         }
     }
 
     .experience {
 
-        .tipsTitle {
+        .experienceTitle {
+            margin: 5rem auto;
+            max-width: 70rem;
             font-size: 5rem;
+            color: var(--colorBrokenWhite);
+            -webkit-text-stroke: 2px var(--colorBlack);
         }
 
-        .infoWrapper {
-            display: grid;
-            grid-template-columns: 3fr 1fr 4fr;
+        .experienceWrapper {
+            max-width: 70rem;
+            margin: auto;
             grid-template-rows: 1fr;
+            grid-template-columns: 4fr .8fr 6fr;
+
+            .experienceInfo {
+                padding: 2rem;
+            }
+
+            .experienceSquares {
+                background-color: var(--colorYellow);
+                border: 2px solid var(--colorBlack);
+                background-image: url(../../static/images/squares.png);
+            }
         }
 
-        .experienceSquares {
-            background-color: var(--colorYellow);
-            background-image: url(../../static/images/squares.png);
-            border: 2px solid var(--colorBlack);
-        }
-    }
+        .experienceLink {
+            margin: 3rem auto;
+            max-width: 70rem;
 
-    .buttonLarge {
-        margin: 5rem var(--marginMobile);
-        background-color: var(--colorGreen);
-        padding: 2rem 4rem;
-        border: 2px solid var(--colorBlack);
-        box-shadow: var(--colorBlack) -5px 5px;
-        color: var(--colorWhite);
-        text-transform: uppercase;
-        font-size: var(--fontLarge);
-        font-weight: 600;
-
-        &:hover {
-            box-shadow: var(--colorBlack) -3px 3px;
+            .experienceButton {
+                padding: 2rem 4.5rem;
+                font-weight: 700;
+                font-size: var(--fontLarge);
+            }
         }
     }
 }

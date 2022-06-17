@@ -19,6 +19,15 @@ body {
     font-display: swap;
 }
 
+button {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    border: 2px solid var(--colorBlack);
+    box-shadow: var(--colorBlack) -5px 5px;
+}
+
 li,
 a {
     text-decoration: none;
