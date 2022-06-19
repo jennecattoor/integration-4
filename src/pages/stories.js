@@ -8,6 +8,7 @@ const StoriesPage = () => {
   return (
     <>
       <Header />
+      <h2 className={styles.storiesTitle}>Stories</h2>
       <section className={styles.rianne}>
         <div className={styles.text}>
           <p>Hi, my name is Rianne. I study psychology, and three years ago I got spiked on what should have been a fun night out. At the time I was out on a date and afterwards we headed to a concert. At a certain moment I started feeling <span>dizzy and drunk</span> which was odd because it was only my <span>second beer</span> and I ate well before the gig. I immediately ran to the bathroom for some fresh air but I kept getting worse and worse. My body felt heavier and heavier while I was trying to make my way over, I even fell down on the ground. Once I reached the toilet, I <span>started throwing up</span> uncontrollably.</p>

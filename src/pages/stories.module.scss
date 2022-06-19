@@ -1,5 +1,11 @@
+.storiesTitle {
+    padding: 8rem var(--marginMobile) 0 var(--marginMobile);
+    font-size: 3rem;
+    font-family: 'Integral', sans-serif;
+    background-color: var(--colorGreen);
+}
+
 .rianne {
-    padding-top: 7rem;
     background-color: var(--colorGreen);
 
 
@@ -42,6 +48,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .storiesTitle {
+        padding: 8rem 2rem 3rem 2rem;
+        font-size: 4rem;
+    }
+
     .rianne {
         display: grid;
         grid-template-columns: 40% 1fr;
@@ -107,6 +118,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .storiesTitle {
+        padding: 8rem 3rem 3rem 3rem;
+        font-size: 5rem;
+    }
+
     .rianne {
         grid-template-columns: 30% 1fr;
     }

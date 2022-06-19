@@ -20,7 +20,7 @@
     padding: 1rem var(--marginMobile);
 
     .navItem {
-        margin-right: 1rem;
+        margin-right: 1.2rem;
 
         &:first-child {
             display: none;
@@ -31,7 +31,7 @@
         }
 
         .navLink {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--colorBlack);
             text-transform: uppercase;
             font-weight: 600;
@@ -81,7 +81,7 @@
             }
 
             .navLink {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
 
                 span {
                     color: var(--colorWhite);
@@ -101,13 +101,13 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
 
-.navList {
-    .navItem {
-        .navLink {
-            font-size: 1.2rem;
-
+    .navList {
+        .navItem {
+            .navLink {
+                font-size: 1.5rem;
+            }
         }
     }
 }
