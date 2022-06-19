@@ -1,31 +1,61 @@
 .header {
+    padding-top: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
-    width: 99vw;
-    padding: 1.5rem .8rem;
+    width: 100%;
+    background-color: var(--colorYellow);
 }
 
 .logo {
+    padding: 0 var(--marginMobile);
     color: var(--colorBlack);
     font-size: var(--fontLarge);
     font-family: 'Integral', sans-serif;
 }
 
 .navList {
-    display: none;
+    display: flex;
+    padding: 1rem var(--marginMobile);
+
+    .navItem {
+        margin-right: 1rem;
+
+        .navLink {
+            font-size: 1.2rem;
+            color: var(--colorBlack);
+            text-transform: uppercase;
+            font-weight: 600;
+
+            span {
+                color: var(--colorBlack);
+            }
+        }
+
+        .navLinkActive {
+            color: var(--colorGreen);
+        }
+
+        .navLinkActiveSpecial {
+            span {
+                color: var(--colorGreen);
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
 
     .header {
         padding: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         font-size: 1.5rem;
+        background-color: transparent;
     }
 
     .navList {
-        display: flex;
         align-items: center;
 
         .navItem {
@@ -39,9 +69,7 @@
             }
 
             .navLink {
-                color: var(--colorBlack);
-                text-transform: uppercase;
-                font-weight: 600;
+                font-size: 1.5rem;
 
                 span {
                     color: var(--colorWhite);
@@ -53,7 +81,6 @@
             }
 
             .navLinkActiveSpecial {
-
                 span {
                     color: var(--colorGreen);
                 }
