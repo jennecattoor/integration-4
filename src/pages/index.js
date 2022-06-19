@@ -16,6 +16,8 @@ const IndexPage = () => {
           <Link className={styles.headerLink} to='/prepare'><button className={styles.headerButton}>Prepare against spiking</button></Link>
           <Link className={styles.headerLink} to='/experience'><button className={styles.headerButton}>Visist VR experience</button></Link>
         </div>
+        <StaticImage className={styles.headerPills1} src="../../static/images/pills-1.png" alt="pills" />
+        <StaticImage className={styles.headerPills2} src="../../static/images/pills-2.png" alt="pills" />
       </section>
       <section className={styles.basics}>
         <h2 className={styles.basicsTitle}>First, the basics</h2>

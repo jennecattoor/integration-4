@@ -16,6 +16,7 @@
         line-height: 130%;
         color: var(--colorWhite);
         text-shadow: -5px 5px #003726, -10px 10px var(--colorPurple);
+        z-index: 2;
     }
 
     .headerButtons {
@@ -23,6 +24,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
 
         .headerLink {
             margin: 1rem var(--marginMobile);
@@ -34,6 +36,14 @@
                 background-color: var(--colorPurple);
             }
         }
+    }
+
+    .headerPills1 {
+        display: none;
+    }
+
+    .headerPills2 {
+        display: none;
     }
 }
 
@@ -399,6 +409,24 @@
                     font-size: 1.5rem;
                 }
             }
+        }
+
+        .headerPills1 {
+            display: inline;
+            width: 10rem;
+            z-index: 1;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        .headerPills2 {
+            display: inline;
+            width: 10rem;
+            z-index: 1;
+            position: absolute;
+            left: 10%;
+            top: 70%;
         }
     }
 
