@@ -63,9 +63,16 @@
         }
 
         .name {
-            font-size: var(--fontLarge)
+            font-size: var(--fontLarge);
+
+            .icon {
+                display: none;
+            }
         }
 
+        .number {
+            display: none;
+        }
 
         &:nth-child(1) {
             background-color: var(--colorBrokenWhite);
@@ -163,14 +170,34 @@
             .date {
                 grid-area: date;
                 padding: 1.4rem 1rem 1.6rem 1rem;
-                font-size: var(--fontLarge)
+                min-width: 20rem;
+                font-size: 1.7rem;
             }
 
             .name {
                 grid-area: name;
                 padding: 1.4rem 1rem 1.6rem 1rem;
+                min-width: 35rem;
+                font-size: 1.7rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .icon {
+                    display: inline;
+                    font-size: 2.5rem;
+                    line-height: 100%;
+                }
             }
 
+            .number {
+                display: inline;
+                grid-area: number;
+                transform: rotate(90deg);
+                justify-self: center;
+                align-self: center;
+                font-family: 'Inter', sans-serif;
+            }
 
             &:nth-child(1) {
                 transform: rotate(-3deg);

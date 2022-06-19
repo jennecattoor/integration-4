@@ -29,19 +29,23 @@ const ExperiencePage = () => {
         <div>
           <div className={styles.location}>
             <p className={styles.date}>25 Jun - 26 Jun</p>
-            <p className={styles.name}>&#9729; Oh my! Music festival &#9729;</p>
+            <div className={styles.name}><p className={styles.icon}>&#9729;</p><p>Oh my! Music festival</p><p className={styles.icon}>&#9729;</p></div>
+            <p className={styles.number}>448312</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>27 Jun - 1 Jul</p>
-            <p className={styles.name}>&#9733; Stadhuisplein &#9733;</p>
+            <div className={styles.name}><p className={styles.icon}>&#9733;</p><p>Stadhuisplein</p><p className={styles.icon}>&#9733;</p></div>
+            <p className={styles.number}>448324</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>2 Jul</p>
-            <p className={styles.name}>&#9761; Triangle festival &#9761;</p>
+            <div className={styles.name}><p className={styles.icon}>&#9761;</p><p>Triangle festival</p><p className={styles.icon}>&#9761;</p></div>
+            <p className={styles.number}>448338</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>3 Jul - 7 Jul</p>
-            <p className={styles.name}>&#9775; De meent &#9775;</p>
+            <div className={styles.name}><p className={styles.icon}>&#9775;</p><p>De meent</p><p className={styles.icon}>&#9775;</p></div>
+            <p className={styles.number}>448388</p>
           </div>
         </div>
       </section>
