@@ -43,8 +43,8 @@ const IndexPage = () => {
         </div>
       </section>
       <section className={styles.prepare}>
-        <h2 className={styles.prepareTitle}>Prepare yourself and read our <span>prepare</span></h2>
-        <Link className={styles.prepareLink} to='/prepare'><button className={styles.prepareButton}>Read the prepare</button></Link>
+        <h2 className={styles.prepareTitle}>Prepare yourself and read our <span>tips</span></h2>
+        <Link className={styles.prepareLink} to='/prepare'><button className={styles.prepareButton}>Read the tips</button></Link>
       </section>
       <section className={styles.quote}>
         <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe." - Jane</p>
