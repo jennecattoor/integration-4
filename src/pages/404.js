@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Wrong from '../../static/gifs/wrong.gif'
 
-const PageNotFound = () => {
+const NotFound = () => {
   return (
     <>
       <Header />
@@ -17,5 +17,5 @@ const PageNotFound = () => {
   )
 }
 
-export default PageNotFound
+export default NotFound
 

@@ -280,7 +280,67 @@
     }
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .stories {
+        .storiesText {
+            margin: 4rem auto;
+            max-width: 70rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .storiesTitle {
+                margin: 0;
+                margin-bottom: 1rem;
+                font-size: 5rem;
+            }
+
+            p {
+                max-width: 30rem;
+            }
+        }
+
+        .storiesGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            .story {
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 900;
+
+                &:hover {
+                    p {
+                        padding-left: 2.5rem;
+                        transition: .2s;
+                    }
+                }
+
+                p {
+                    padding: 2rem 2rem 0 2rem;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .experience {
+        .experienceWrapper {
+            max-width: 70rem;
+            margin: auto;
+            grid-template-rows: 1fr;
+            grid-template-columns: 4fr .8fr 6fr;
+
+            .experienceSquares {
+                background-color: var(--colorYellow);
+                border: 2px solid var(--colorBlack);
+                background-image: url(../../static/images/squares.png);
+            }
+        }
+    }
+}
+
 
 
 @media only screen and (min-width: 1024px) {
@@ -356,52 +416,7 @@
         }
     }
 
-    .stories {
-        .storiesText {
-            margin: 4rem auto;
-            max-width: 70rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .storiesTitle {
-                margin: 0;
-                margin-bottom: 1rem;
-                font-size: 5rem;
-            }
-
-            p {
-                max-width: 30rem;
-            }
-        }
-
-        .storiesGrid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-
-            .story {
-                text-transform: uppercase;
-                font-size: 3rem;
-                font-weight: 900;
-
-                &:hover {
-                    p {
-                        padding-left: 2.5rem;
-                        transition: .2s;
-                    }
-                }
-
-                p {
-                    padding: 2rem 2rem 0 2rem;
-                    transition: .3s;
-                }
-            }
-        }
-    }
-
     .experience {
-
         .experienceTitle {
             margin: 5rem auto;
             max-width: 70rem;
@@ -411,19 +426,8 @@
         }
 
         .experienceWrapper {
-            max-width: 70rem;
-            margin: auto;
-            grid-template-rows: 1fr;
-            grid-template-columns: 4fr .8fr 6fr;
-
             .experienceInfo {
                 padding: 2rem;
-            }
-
-            .experienceSquares {
-                background-color: var(--colorYellow);
-                border: 2px solid var(--colorBlack);
-                background-image: url(../../static/images/squares.png);
             }
         }
 
@@ -438,4 +442,13 @@
             }
         }
     }
+
+    .stories {
+        .storiesGrid {
+            .story {
+                font-size: 3rem;
+            }
+        }
+    }
+
 }

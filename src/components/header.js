@@ -1,7 +1,6 @@
 import React from "react"
 import * as styles from './header.module.scss'
 import { Link } from 'gatsby'
-import { slide as Menu } from 'react-burger-menu'
 
 const Header = () => {
 

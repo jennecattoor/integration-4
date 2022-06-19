@@ -53,8 +53,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
-
+@media only screen and (min-width: 768px) {
     .header {
         padding: 2rem;
         flex-direction: row;
@@ -98,6 +97,17 @@
                     color: var(--colorGreen);
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+.navList {
+    .navItem {
+        .navLink {
+            font-size: 1.2rem;
+
         }
     }
 }

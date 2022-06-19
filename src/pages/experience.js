@@ -29,19 +29,19 @@ const ExperiencePage = () => {
         <div>
           <div className={styles.location}>
             <p className={styles.date}>25 Jun - 26 Jun</p>
-            <p className={styles.name}>Oh my! Music festival</p>
+            <p className={styles.name}>&#9729; Oh my! Music festival &#9729;</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>27 Jun - 1 Jul</p>
-            <p className={styles.name}>Stadhuisplein</p>
+            <p className={styles.name}>&#9733; Stadhuisplein &#9733;</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>2 Jul</p>
-            <p className={styles.name}>Triangle festival</p>
+            <p className={styles.name}>&#9761; Triangle festival &#9761;</p>
           </div>
           <div className={styles.location}>
             <p className={styles.date}>3 Jul - 7 Jul</p>
-            <p className={styles.name}>De meent</p>
+            <p className={styles.name}>&#9775; De meent &#9775;</p>
           </div>
         </div>
       </section>
