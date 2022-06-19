@@ -15,7 +15,7 @@ const Footer = () => {
           <h3 className={styles.itemTitle}>Menu</h3>
           <ul>
             <li><Link to='/' className={styles.link}>Home</Link></li>
-            <li><Link to='/tips' className={styles.link}>Tips</Link></li>
+            <li><Link to='/prepare' className={styles.link}>Prepare</Link></li>
             <li><Link to='/stories' className={styles.link}>Stories</Link></li>
             <li><Link to='/experience' className={styles.link}>Experience</Link></li>
           </ul>

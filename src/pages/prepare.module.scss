@@ -30,7 +30,10 @@
         border: 2px solid var(--colorBlack);
 
         .headerList {
-            line-height: 140%;
+
+            li {
+                margin: .8rem 0;
+            }
         }
     }
 }
@@ -189,6 +192,7 @@
 
     .tipsWrapper {
         padding: 7rem 0;
+        font-size: var(--fontMedium);
     }
 
     .tipsHeader {

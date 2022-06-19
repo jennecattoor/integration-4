@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './tips.module.scss'
+import * as styles from './prepare.module.scss'
 import Header from '../components/header'
 import Footer from '../components/footer'
 

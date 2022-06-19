@@ -217,6 +217,7 @@
 
             p {
                 padding: 2rem var(--marginMobile) 1rem var(--marginMobile);
+                color: var(--colorWhite);
             }
 
             &:nth-child(1) {
@@ -294,7 +295,7 @@
             flex-direction: row;
 
             .headerLink {
-                margin: 1rem 2rem;
+                margin: 1rem 3rem;
 
                 .headerButton {
                     padding: 2rem 4rem;
@@ -384,8 +385,16 @@
                 font-size: 3rem;
                 font-weight: 900;
 
+                &:hover {
+                    p {
+                        padding-left: 2.5rem;
+                        transition: .2s;
+                    }
+                }
+
                 p {
                     padding: 2rem 2rem 0 2rem;
+                    transition: .3s;
                 }
             }
         }

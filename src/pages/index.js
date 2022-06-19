@@ -21,16 +21,16 @@ const IndexPage = () => {
         <h2 className={styles.basicsTitle}>First, the basics</h2>
         <div className={styles.basicsGrid}>
           <div className={styles.basicsVerb}>
-            <h3 className={styles.gridTitle}>&#x27AB; Spiking <span>/spaikiŋ/ · verb · male</span> </h3>
+            <h3 className={styles.gridTitle}>&#10148; Spiking <span>/spaikiŋ/ · verb · male</span> </h3>
             <p>'Spiking' is when someone puts alcohol or drugs into another person's drink or their body without their knowledge and/or consent.</p>
           </div>
           <div className={styles.basicsProblem}>
-            <h3 className={styles.gridTitle}>&#x27A9; & what’s the problem?</h3>
+            <h3 className={styles.gridTitle}>&#10148; & what’s the problem?</h3>
             <p>The number of spiking victims has grown dramatically in the last year. Additionally, a new form of spiking is rapidly spreading across countries. </p>
           </div>
           <div className={styles.basicsArrow}></div>
           <div className={styles.basicsTypes}>
-            <h3 className={styles.gridTitle}>&#x27AC; types of spiking</h3>
+            <h3 className={styles.gridTitle}>&#10148; types of spiking</h3>
             <ul>
               <li className={styles.basicsLi}><p><span>Alcohol:</span> A spiked drink is one that contains extra alcohol or alcohol added to a non-alcoholic beverage when you are not watching.</p></li>
               <li className={styles.basicsLi}><p><span>GHB:</span> An odorless and colorless liquid with a slightly salty taste. At a low dose you get intoxicated, which is comparable to drunkenness.</p></li>
@@ -53,18 +53,18 @@ const IndexPage = () => {
           <p>Click and read how these brave persons share their story about unwanted intoxication.</p>
         </div>
         <div className={styles.storiesGrid}>
-          <div className={styles.story}>
+          <Link to='/stories' className={styles.story}>
             <p>Rianne &#10142;</p>
             <StaticImage src="../../static/images/rianne-s.jpg" alt="Rianne" />
-          </div>
-          <div className={styles.story}>
+          </Link>
+          <Link to='/stories' className={styles.story}>
             <p>Jane &#10142;</p>
             <StaticImage src="../../static/images/jane-s.jpg" alt="Jane" />
-          </div>
-          <div className={styles.story}>
+          </Link>
+          <Link to='/stories' className={styles.story}>
             <p>Noa &#10142;</p>
             <StaticImage src="../../static/images/noa-s.jpg" alt="Noa" />
-          </div>
+          </Link>
         </div>
       </section>
       <section className={styles.experience}>
@@ -77,11 +77,11 @@ const IndexPage = () => {
           </div>
           <div className={styles.experienceSquares}></div>
           <div className={styles.experienceMap}>
-            <StaticImage src="../../static/images/map.png" alt="map of Rotterdam" />
+            <StaticImage src="../../static/images/map.jpg" alt="map of Rotterdam" />
           </div>
         </div>
         <div className={styles.experienceLink}>
-          <Link to='/experience'><button className={styles.experienceButton}>See upcomming locations</button></Link>
+          <Link to='/experience'><button className={styles.experienceButton}>See upcoming locations</button></Link>
         </div>
       </section>
       <Footer />

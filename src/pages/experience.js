@@ -22,7 +22,7 @@ const ExperiencePage = () => {
       </section>
       <Marquee />
       <section className={styles.map}>
-        <StaticImage className={styles.mapImage} src="../../static/images/map.png" alt="Map of Rotterdam" />
+        <StaticImage className={styles.mapImage} src="../../static/images/map.jpg" alt="Map of Rotterdam" />
       </section>
       <section className={styles.locations}>
         <h3 className={styles.locationsTitle}>Upcoming locations</h3>
