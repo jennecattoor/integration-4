@@ -136,7 +136,7 @@
     }
 }
 
-.tips {
+.prepare {
     padding: 8rem var(--marginMobile);
     background-color: var(--colorWhite);
     background-image: url(../../static/images/square-green.svg);
@@ -145,7 +145,7 @@
     justify-content: center;
     align-items: center;
 
-    .tipsTitle {
+    .prepareTitle {
         font-size: 2.3rem;
         font-weight: 900;
         text-align: center;
@@ -157,10 +157,10 @@
         }
     }
 
-    .tipsLink {
+    .prepareLink {
         margin: 1rem;
 
-        .tipsButton {
+        .prepareButton {
             padding: 1.2rem 2.5rem;
             color: var(--colorWhite);
             font-size: var(--fontMedium);
@@ -170,6 +170,7 @@
 }
 
 .quote {
+    padding: 8rem var(--marginMobile);
     background-color: var(--colorYellow);
     display: flex;
     flex-direction: column;
@@ -177,7 +178,6 @@
     align-items: center;
 
     .quoteText {
-        margin: 8rem var(--marginMobile);
         font-size: 2.3rem;
         font-weight: 900;
         line-height: 140%;
@@ -190,6 +190,11 @@
             padding: 0 .5rem .5rem .5rem;
             border-radius: .5rem;
         }
+    }
+
+    .quoteImage {
+        margin-right: 10rem;
+        width: 10rem;
     }
 }
 
@@ -281,6 +286,39 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .header {
+        .headerTitle {
+            font-size: 7rem;
+        }
+
+        .headerButtons {
+            margin: 2rem 0;
+            flex-direction: row;
+
+            .headerLink {
+                margin: 1rem 2rem;
+
+                .headerButton {
+                    padding: 1.5rem 3rem;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        background-color: #8446c6;
+                    }
+                }
+            }
+        }
+    }
+
+    .quote {
+        padding: 12rem var(--marginMobile);
+
+        .quoteText {
+            max-width: 70rem;
+            font-size: 3rem;
+        }
+    }
+
     .stories {
         .storiesText {
             margin: 4rem auto;
@@ -352,7 +390,6 @@
 
         .headerButtons {
             margin: 3rem 0;
-            flex-direction: row;
 
             .headerLink {
                 margin: 1rem 3rem;
@@ -390,28 +427,30 @@
         }
     }
 
-    .tips {
+    .prepare {
         padding: 12rem var(--marginMobile);
 
-        .tipsTitle {
+        .prepareTitle {
             font-size: 3.5rem;
         }
 
-        .tipsLink {
+        .prepareLink {
             margin: 2rem;
 
-            .tipsButton {
+            .prepareButton {
                 padding: 2rem 4.5rem;
                 font-weight: 700;
                 font-size: var(--fontLarge);
+
+                &:hover {
+                    background-color: #07a089;
+                }
             }
         }
     }
 
     .quote {
         .quoteText {
-            margin: 12rem var(--marginMobile);
-            max-width: 70rem;
             font-size: 5rem;
         }
     }
@@ -439,6 +478,10 @@
                 padding: 2rem 4.5rem;
                 font-weight: 700;
                 font-size: var(--fontLarge);
+
+                &:hover {
+                    background-color: #07a089;
+                }
             }
         }
     }

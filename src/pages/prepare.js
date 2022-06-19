@@ -3,12 +3,12 @@ import * as styles from './prepare.module.scss'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-const TipsPage = () => {
+const preparePage = () => {
   return (
     <>
       <Header />
-      <main className={styles.tipsWrapper}>
-        <section className={styles.tipsHeader}>
+      <main className={styles.prepareWrapper}>
+        <section className={styles.prepareHeader}>
           <div className={styles.headerIntro}>
             <h3>Prepare yourself against spiking!</h3>
             <p>Do you know how to react or what to do when you encounter a spiking situation? Find out below what you can do.</p>
@@ -24,7 +24,7 @@ const TipsPage = () => {
             </ul>
           </div>
         </section>
-        <section className={styles.tipsSteps}>
+        <section className={styles.prepareSteps}>
           <h2 className={styles.stepsTitle}>What to do when someone spikes <span>you?</span></h2>
           <div className={styles.stepWrapper}>
             <h3 className={styles.stepTitle}>1. Go to a safe place, have a trusted person with you</h3>
@@ -57,5 +57,5 @@ const TipsPage = () => {
   )
 }
 
-export default TipsPage
+export default preparePage
 

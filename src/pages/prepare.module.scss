@@ -1,10 +1,10 @@
-.tipsWrapper {
+.prepareWrapper {
     padding: 8rem 0 4rem 0;
     background-color: var(--colorWhite);
     background-image: url(../../static/images/square-green.svg);
 }
 
-.tipsHeader {
+.prepareHeader {
     padding: 1rem var(--marginMobile);
     background-image: url(../../static/images/party-background.jpg);
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     }
 }
 
-.tipsSteps {
+.prepareSteps {
     padding: 1rem var(--marginMobile);
 
     .stepWrapper {
@@ -117,7 +117,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    .tipsHeader {
+    .prepareHeader {
         padding: 5rem 2rem;
         display: flex;
         flex-direction: column;
@@ -148,7 +148,7 @@
         text-align: center;
     }
 
-    .tipsSteps {
+    .prepareSteps {
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -187,12 +187,12 @@
 
 @media only screen and (min-width: 1024px) {
 
-    .tipsWrapper {
+    .prepareWrapper {
         padding: 7rem 0;
         font-size: var(--fontMedium);
     }
 
-    .tipsHeader {
+    .prepareHeader {
 
         .headerIntro {
             width: 50rem;
@@ -208,7 +208,7 @@
         font-size: 3rem;
     }
 
-    .tipsSteps {
+    .prepareSteps {
         .stepWrapper {
             width: 50rem;
         }

@@ -13,7 +13,7 @@ const IndexPage = () => {
       <section className={styles.header}>
         <h1 className={styles.headerTitle}>What the f*ck is Spiking!?</h1>
         <div className={styles.headerButtons}>
-          <Link className={styles.headerLink} to='/tips'><button className={styles.headerButton}>Prepare against spiking</button></Link>
+          <Link className={styles.headerLink} to='/prepare'><button className={styles.headerButton}>Prepare against spiking</button></Link>
           <Link className={styles.headerLink} to='/experience'><button className={styles.headerButton}>Visist VR experience</button></Link>
         </div>
       </section>
@@ -40,12 +40,13 @@ const IndexPage = () => {
           <div className={styles.basicsSquares}></div>
         </div>
       </section>
-      <section className={styles.tips}>
-        <h2 className={styles.tipsTitle}>Prepare yourself and read our <span>tips</span></h2>
-        <Link className={styles.tipsLink} to='/tips'><button className={styles.tipsButton}>Read the tips</button></Link>
+      <section className={styles.prepare}>
+        <h2 className={styles.prepareTitle}>Prepare yourself and read our <span>prepare</span></h2>
+        <Link className={styles.prepareLink} to='/prepare'><button className={styles.prepareButton}>Read the prepare</button></Link>
       </section>
       <section className={styles.quote}>
         <p className={styles.quoteText}>"I was very <span>confused</span> and felt like I could not breathe." - Jane</p>
+        <StaticImage className={styles.quoteImage} src="../../static/images/unspiked.jpg" alt="#unspiked" />
       </section>
       <section className={styles.stories}>
         <div className={styles.storiesText}>

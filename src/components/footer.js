@@ -23,9 +23,9 @@ const Footer = () => {
         <div className={styles.itemWrapper}>
           <h3 className={styles.itemTitle}>Contact</h3>
           <ul>
-            <li>Druglijn</li>
-            <li>Politie</li>
-            <li>Druginfo</li>
+            <li><a href='https://www.drugsinfo.nl' rel='noreferrer' className={styles.link}>Drugsinfo</a></li>
+            <li><a href='https://www.politie.nl' rel='noreferrer' className={styles.link}>Politie</a></li>
+            <li><a href='https://www.drugsinfo.nl' rel='noreferrer' className={styles.link}>Druglijn</a></li>
           </ul>
         </div>
         <div className={styles.itemWrapper}>

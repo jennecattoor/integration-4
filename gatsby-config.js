@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `integration-4`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.unspiked.gtsb.io`
   },
   plugins: [
     "gatsby-plugin-image",
