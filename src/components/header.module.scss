@@ -4,12 +4,12 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    background-color: var(--colorYellow);
+    background-color: var(--colorDarkGreen);
 }
 
 .logo {
     padding: 0 var(--marginMobile);
-    color: var(--colorBlack);
+    color: var(--colorWhite);
     font-size: var(--fontLarge);
     font-family: 'Integral', sans-serif;
 }
@@ -32,12 +32,12 @@
 
         .navLink {
             font-size: 1rem;
-            color: var(--colorBlack);
+            color: var(--colorWhite);
             text-transform: uppercase;
             font-weight: 600;
 
             span {
-                color: var(--colorBlack);
+                color: var(--colorWhite);
             }
         }
 
@@ -63,6 +63,10 @@
         background-color: transparent;
     }
 
+    .logo {
+        color: var(--colorBlack)
+    }
+
     .navList {
         align-items: center;
 
@@ -82,6 +86,7 @@
 
             .navLink {
                 font-size: 1.3rem;
+                color: var(--colorBlack);
 
                 span {
                     color: var(--colorWhite);
