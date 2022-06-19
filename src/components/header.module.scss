@@ -16,10 +16,19 @@
 
 .navList {
     display: flex;
+    justify-content: space-between;
     padding: 1rem var(--marginMobile);
 
     .navItem {
         margin-right: 1rem;
+
+        &:first-child {
+            display: none;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         .navLink {
             font-size: 1.2rem;
@@ -60,6 +69,10 @@
 
         .navItem {
             margin: 0 1rem;
+
+            &:first-child {
+                display: inline;
+            }
 
             &:last-child {
                 padding: .5rem;
